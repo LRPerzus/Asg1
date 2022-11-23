@@ -26,6 +26,6 @@ const idkPotion = new Potion(
 
 
 const potionContent = healthPotion.Pcontent();
-Console.log(document.body.innerHTML = potionContent);
+document.body.innerHTML = potionContent
 
 

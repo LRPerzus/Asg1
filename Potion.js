@@ -18,7 +18,7 @@ class Potion {
         <figure class="Potion IMG">
             <img src=${this.imgsource} alt=""/>
         </figure>
-        <h1 class="name">${this.name}/h1>
+        <h1 class="name">${this.name}</h1>
             <ul>
                 <li>Recover Hp</li>
                 <li>15GP</li>
