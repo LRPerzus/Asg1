@@ -23,7 +23,7 @@ class Potion {
                 <li>Recover Hp</li>
                 <li>15GP</li>
             </ul>
-        <article>
+        </article>
         `;
         return content
     }
