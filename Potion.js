@@ -14,16 +14,18 @@ class Potion {
     }
     Pcontent(){
         const content =`
-        <article>
-        <figure class="Potion IMG">
-            <img src=${this.imgsource} alt=""/>
+        <section class="column">
+        <figure class="potionimg">
+        <img src=${this.imgsource} alt=""/>
         </figure>
+        <article class="text">
         <h1 class="name">${this.name}</h1>
-            <ul>
+        <ul class="details">
                 <li>Recover Hp</li>
                 <li>15GP</li>
             </ul>
         </article>
+        </section>
         `;
         return content
     }

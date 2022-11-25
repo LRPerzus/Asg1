@@ -8,7 +8,8 @@ const healthPotion = new Potion(
     "Health Potion",
     "A flask of liquid that heals the body from injuries",
     10,
-    15
+    15,
+    "../Potion.png"
 )
 Potionlist.push(healthPotion)
 
@@ -16,7 +17,8 @@ const speedPotion = new Potion(
     "Speed Potion",
     "A flask of liquid that gives you SPEEEDDDDD GOTTA GO FAST",
     10,
-    20
+    20,
+    "../Potion.png"
 )
 Potionlist.push(speedPotion)
 
@@ -24,7 +26,8 @@ const idkPotion = new Potion(
     "????????",
     "??????????",
     0,
-    30
+    30,
+    "../Potion.png"
 )
 Potionlist.push(idkPotion)
 
@@ -34,4 +37,4 @@ function addingPotionList(item){
     potionContent += item.Pcontent();
 }
 
-document.body.innerHTML += potionContent
+document.querySelector(".row").innerHTML += potionContent
