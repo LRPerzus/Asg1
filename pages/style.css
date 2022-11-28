@@ -37,8 +37,10 @@
     justify-content: center;
     align-items: center;
     padding: 0 10 0 10;
-    position: center;
+    position: absolute;
     height:100%;
+    width: 100%;
+    max-width: 100%;
     
 }
 .column {
@@ -75,6 +77,7 @@ div section:hover{
     height: 100%;
     width: 100%;
 }
+
 
 
 

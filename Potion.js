@@ -14,7 +14,7 @@ class Potion {
     }
     Pcontent(){
         const content =`
-        <section class="column" id=${this.name} onclick="dean('${this.name}')" >
+        <section class="column" Id= "${this.name}" onclick="dean('${this.name}')" >
             <figure class="potionimg">
             <img src=${this.imgsource} alt=""/>
             </figure>

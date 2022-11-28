@@ -11,7 +11,10 @@
     <script type="module" src="script.js" ></script>
     <script>
       function dean(itemName) {
-          console.log(itemName)
+        let ele= document.getElementById('blur');
+        ele.classList.toggle("active");
+        let popup = document.getElementById(itemName);
+        popup.classList.toggle("popup");
       }
       </script>
     <title>Potion</title>
@@ -24,6 +27,6 @@
     <a href="#contact">Armor</a>
     <a href="#about">Magic Scrolls</a>
     </div>
-    <div class="row"></div>
+    <div class="row" id="blur"></div>
   </body>
 
