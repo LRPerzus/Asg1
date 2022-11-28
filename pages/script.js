@@ -2,6 +2,10 @@ import Armor from "../Armor.js";
 import Weapon from "../Weapon.js";
 import Potion from "../Potion.js";
 
+function addingPotionList(item){
+    potionContent += item.Pcontent();
+}
+
 const Potionlist = []
 let potionContent = ``
 const healthPotion = new Potion(
@@ -33,9 +37,6 @@ Potionlist.push(idkPotion)
 
 Potionlist.forEach(addingPotionList);
 
-function addingPotionList(item){
-    potionContent += item.Pcontent();
-}
 document.querySelector(".row").innerHTML += potionContent
 
 console.log(document.querySelector(".name"))
