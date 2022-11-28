@@ -36,5 +36,6 @@ Potionlist.forEach(addingPotionList);
 function addingPotionList(item){
     potionContent += item.Pcontent();
 }
-
 document.querySelector(".row").innerHTML += potionContent
+
+console.log(document.querySelector(".name"))
