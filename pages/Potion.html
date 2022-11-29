@@ -12,9 +12,12 @@
     <script>
       function dean(itemName) {
         let ele= document.getElementById('blur');
+        console.log(ele)
         ele.classList.toggle("active");
-        let popup = document.getElementById(itemName);
-        popup.classList.toggle("popup");
+         let popup = document.getElementById(itemName)
+        popup = popup.getElementsByClassName("popup");
+         console.log(popup)
+        popup.classList.toggle("active");
       }
       </script>
     <title>Potion</title>

@@ -25,7 +25,20 @@ class Potion {
                     <li>15GP</li>
             </ul>
             </article>
-        </section>            
+        
+        <div class="popup">
+        <figure class="potionimg">
+            <img src=${this.imgsource} alt=""/>
+            </figure>
+            <article class="text">
+            <h1 class="name">${this.name}</h1>
+            <ul class="details">
+                    <li>Recover Hp</li>
+                    <li>15GP</li>
+            </ul>
+            </article>  
+        </div>
+        </section> 
         `;
         return content
     }
