@@ -4,17 +4,19 @@ class Potion {
         description,
         hp,
         cost,
-        imgsource
+        imgsource,
+        objname
     ){
         this.name=name;
         this.description=description
         this.hp=hp;
         this.cost=cost;
         this.imgsource=imgsource;
+        this.objname=objname
     }
     Pcontent(){
         const content =`
-        <section class="column" Id= "${this.name}" onclick="dean('${this.name}')" >
+        <section class="column" Id= "${this.name}" onclick="dean('${this.objname}')" >
             <figure class="potionimg">
             <img src=${this.imgsource} alt=""/>
             </figure>
@@ -25,8 +27,13 @@ class Potion {
                     <li>15GP</li>
             </ul>
             </article>
-        
-        <div class="popup" Id="${this.name}">
+            </section>
+            `;
+            return content
+        }
+    Ppopup(){
+        const content=`
+        <div class="popup" Id="${this.objname}" >
         <figure class="potionimg">
             <img src=${this.imgsource} alt=""/>
             </figure>

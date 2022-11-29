@@ -43,6 +43,11 @@
     max-width: 100%;
     
 }
+#blur.active{
+  filter: blur(20px);
+  user-select: none;
+}
+
 .column {
     display: flex;
     background-color: #5E6174;
@@ -78,7 +83,7 @@ div section:hover{
     width: 100%;
 }
 
-.column .popup{
+.popup{
   display: flex;
   position: fixed;
     top: 40%;
@@ -94,11 +99,12 @@ div section:hover{
     transition: 0.5s;
 }
 
-.column .popup.active{
+.popup.active{
   top: 50%;
     visibility: visible;
     opacity: 1;
     transform: 0.5s;
+    filter: none  ;
 }
 
 
