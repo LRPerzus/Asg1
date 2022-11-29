@@ -26,7 +26,7 @@ class Potion {
             </ul>
             </article>
         
-        <div class="popup">
+        <div class="popup" Id="${this.name}">
         <figure class="potionimg">
             <img src=${this.imgsource} alt=""/>
             </figure>
