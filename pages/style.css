@@ -5,6 +5,14 @@
     box-sizing: border-box;
     font-family: 'Raleway', sans-serif;
 }
+.welcome{
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+  height: 100px;
+  background-image:url('../Shop.jpg');
+  justify-content: center;
+}
 .topnav {
     overflow: hidden;
     background-color: #333;
@@ -36,12 +44,10 @@
     background-color: #5E6174;
     justify-content: center;
     align-items: center;
-    padding: 0 10 0 10;
-    position: absolute;
-    height:100%;
-    width: 100%;
-    max-width: 100%;
-    
+    margin: auto;
+    height:99%;
+    width: 99%;
+    max-width: 100%;    
 }
 #blur.active{
   filter: blur(20px);
@@ -107,6 +113,8 @@ div section:hover{
     filter: none  ;
 }
 
-
-
+.button{
+  display: flex;
+  background-color: aqua;
+}
 

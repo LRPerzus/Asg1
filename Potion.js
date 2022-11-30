@@ -44,8 +44,10 @@ class Potion {
                     <li>15GP</li>
             </ul>
             </article>  
+            <a class="button" href="#"onclick="dean('${this.objname}')">Close</a>
         </div>
-        </section> 
+
+
         `;
         return content
     }

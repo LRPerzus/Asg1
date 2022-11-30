@@ -48,4 +48,3 @@ Potionlist.forEach(addingPopcontent);
 
 document.querySelector(".row").innerHTML += potionContent
 document.body.innerHTML += popupContent
-console.log(document.querySelector(".name"))

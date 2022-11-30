@@ -9,27 +9,35 @@
     <link rel="stylesheet" href="style.css" />
     <script type="module" src="../Potion.js"></script>
     <script type="module" src="script.js" ></script>
-    <script>
+    <script defer>
       function dean(itemName) {
-        console.log(itemName)
         let ele= document.getElementById('blur');
-        console.log(ele)
         ele.classList.toggle("active");
         let popup = document.getElementById(itemName)
-        console.log(popup)
         popup.classList.toggle("active");
       }
-      </script>
+
+      function popupgone(){
+        let allActive = document.getElementsByClassName("active")
+        if (allActive.length==2 && (document.getElementById('blur'))==allActive[0]){
+          console.log(typeof allActive[0])
+        }
+      }
+    </script>
     <title>Potion</title>
 
   </head>
   <body>
+    <div class="welcome">
+      Welcome
+    </div>
     <div class="topnav">
     <a class="potion" href="../index.html">Potion</a>
     <a href="#news">Weapons</a>
     <a href="#contact">Armor</a>
     <a href="#about">Magic Scrolls</a>
     </div>
-    <div class="row" id="blur"></div>
+    <div class="row" id="blur">
+    </div>
   </body>
 
