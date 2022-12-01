@@ -9,6 +9,14 @@ function addingPopcontent(item){
     popupContent += item.Ppopup();
 }
 
+
+
+let currentrows = document.getElementsByClassName("row");
+let rowIds = [];
+for (let item of currentrows) {
+    rowIds.push(item.id);
+}
+
 const Potionlist = []
 let potionContent = ``
 let popupContent=``
@@ -42,9 +50,22 @@ const idkPotion = new Potion(
     'idkPotion'
 )
 Potionlist.push(idkPotion)
-
-Potionlist.forEach(addingPotionList);
+rowIds.forEach(testing)
+function testing(id){
+    let row= document.getElementById(id);
+    for (let objs of Potionlist){
+    if (row.childElementCount < 3){
+        potionContent =  objs.Pcontent();
+        document.getElementById(id).innerHTML += potionContent
+    }
+    else{
+        var newrow = document.createElement('div')
+        newrow.className="row"
+        newrow.id="blur"+(rowIds.length + 1)
+        
+    }
+    }   
+}
+//Potionlist.forEach(addingPotionList);
 Potionlist.forEach(addingPopcontent);
-
-document.querySelector(".row").innerHTML += potionContent
 document.body.innerHTML += popupContent
