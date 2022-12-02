@@ -24,19 +24,37 @@ body{
 
 .Gilmore{
   background-color:hsl(0, 0%, 17%);
-  width: 90%;
-  height: 30%;
+  margin-left: 10%;
+  margin-bottom: 5%;
+  width: 80%;
+  height: 404.850px;
+  border-radius: 80px;
 }
 .Gilmore img{
   display: flex;
-  width: 20%;
-  height: 10%;
+  width: 25%;
+  height: 20%;
+  margin:0;
+  border-radius: 80px;
+
+}
+
+.Gilmore .detailsColumn{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  bottom: 250px;
+  color: white;
+  margin-left: 20%;
 }
 
 .Gilmore .details{
   display: flex;
+  flex-direction: column;
   color: white;
   font-family: 'Dancing Script', cursive;
+  font-size: 25px;
+  text-align: center;
 }
 
 .topnav {
