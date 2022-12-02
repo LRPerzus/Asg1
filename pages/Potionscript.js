@@ -1,5 +1,3 @@
-import Armor from "../Armor.js";
-import Weapon from "../Weapon.js";
 import Potion from "../Potion.js";
 
 function addingPotionList(item){
@@ -50,22 +48,8 @@ const idkPotion = new Potion(
     'idkPotion'
 )
 Potionlist.push(idkPotion)
-rowIds.forEach(testing)
-function testing(id){
-    let row= document.getElementById(id);
-    for (let objs of Potionlist){
-    if (row.childElementCount < 3){
-        potionContent =  objs.Pcontent();
-        document.getElementById(id).innerHTML += potionContent
-    }
-    else{
-        var newrow = document.createElement('div')
-        newrow.className="row"
-        newrow.id="blur"+(rowIds.length + 1)
-        
-    }
-    }   
-}
-//Potionlist.forEach(addingPotionList);
+
+Potionlist.forEach(addingPotionList);
 Potionlist.forEach(addingPopcontent);
+document.querySelector(".row").innerHTML += potionContent
 document.body.innerHTML += popupContent
