@@ -42,19 +42,40 @@ body{
 .Gilmore .detailsColumn{
   display: flex;
   flex-direction: column;
+  height: 30%;
   position: relative;
   bottom: 250px;
   color: white;
   margin-left: 20%;
 }
 
-.Gilmore .details{
+.Gilmore .detailsColumn .details{
   display: flex;
   flex-direction: column;
   color: white;
   font-family: 'Dancing Script', cursive;
   font-size: 25px;
   text-align: center;
+}
+
+.form {
+  display: flex;
+  background-color: #424450;
+  margin-left: 47%;
+  margin-bottom:100%;
+  width: 50px;
+  height: 50px;
+  font-size: 30px;
+  color: #ddd;
+}
+
+.form :hover {
+  box-shadow: 0 10px 30px blueviolet;
+}
+
+.Gilmore .detailsColumn .form img{
+  height:50px ;
+  width:50px;
 }
 
 .topnav {
@@ -165,6 +186,198 @@ body{
 
 .button{
   display: flex;
-  background-color: aqua;
+  height: 20%;
+  width: 20%;
+  justify-content: center;
+  color: white;
+  font-size: 25px;
+  background-color: blueviolet;
+  margin-left: 200px;
+  margin-top: 250px;
 }
 
+.exit img{
+  width: 3%;
+  background-color: #424450;
+  border-radius: 10px;
+}
+
+.exit :hover{
+  box-shadow: 0 30px 25px blueviolet;
+}
+
+.forms {
+  display: flex;
+  background-color: #424450;
+  margin-left: 5%;
+  width: 90%;
+  font-size: 30px;
+  color: #ddd;
+  border-radius: 6px;
+}
+
+
+#itemtype{
+  display: flex;
+  font-size: 30px;
+  font-family: 'Dancing Script', cursive;
+}
+label{
+  display: flex;
+  font-family: 'Dancing Script', cursive;
+}
+input{
+  display: flex;
+  font-size: 30px;
+  font-family: 'Dancing Script', cursive;
+}
+
+
+@media (max-width:477px){
+  .Gilmore{
+    background-color:hsl(0, 0%, 17%);
+    width: 100%;
+    height: 500px;
+    border-radius: 10%;
+    margin-left: 0;
+    justify-content: center;
+  }
+
+  .Gilmore img{
+    display: flex;
+    width: 50%;
+    height: 20%;
+    margin-left: 25%;
+    border-radius:10%;
+  }
+  .Gilmore .detailsColumn{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    bottom: 250px;
+    color: white;
+    margin-left: 0;
+    margin-top: 70%;
+  }
+  
+  .Gilmore .details{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-family: 'Dancing Script', cursive;
+    font-size: 25px;
+    text-align: center;
+  }
+  
+  .topnav {
+      display: flex;
+      margin-left: 0;
+      width:100%;
+      justify-content: center;
+      background-color: rgb(139, 77, 196);
+    }
+    
+  .topnav a {
+    display: flex;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    margin-right:0;
+    margin-left:0;
+    text-decoration: none;
+    font-size: 20px;
+    transition: 0.2s ease;
+    }
+    
+  .topnav a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+    
+    .topnav a.active {
+      background-color: blueviolet;
+      color: white;
+    }
+  
+  .row {
+      display: flex;
+      flex-direction: column;
+      background-color: hsl(0, 0%, 17%);;
+      box-shadow: 0 6px 15px rgba(174, 174, 174, 0.3);
+      justify-content:center;
+      align-items:center;
+      margin:0;
+      width: 100%;
+      height: 100%;
+      max-width: 100%;    
+  }
+  #blur.active{
+    filter: blur(20px);
+    user-select: none;
+  }
+  
+  .column {
+      display: flex;
+      background-color: #5E6174;
+      margin: 60px;
+      border: 5px solid  #424450;
+      width: 90%;
+      height: 90%;
+      box-shadow: 0 6px 15px rgba(30, 30, 30, 0.3);
+      
+  }
+  .row .column:hover{
+    box-shadow: 0 10px 25px blueviolet;
+  }
+  .name{
+      width: 90% ;
+      height: 30%;
+      font-size: 25px ;
+      margin-left: 10px;
+      margin-right: 10px;
+      margin-top: 10px;
+      margin-bottom: 0px;
+  }
+  .text.details{
+      margin-top: 0px ;
+      margin-right: 20px;
+      margin-left: 40px;
+      margin-bottom: 100px;
+  }
+  
+  
+  .potionimg> img {
+      height: 100%;
+      width: 100%;
+  }
+  
+  .popup{
+    display: flex;
+    position: fixed;
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      height: 50%;
+      width: 50%;
+      padding: 50px;
+      box-shadow: 0 5px 30px rgba(0, 0, 0, .30);
+      background: #5E6174;
+      visibility: hidden;
+      opacity: 0;
+      transition: 0.5s;
+  }
+  
+  .popup.active{
+    top: 50%;
+      visibility: visible;
+      opacity: 1;
+      transform: 0.5s;
+      filter: none  ;
+  }
+  
+  .button{
+    display: flex;
+    background-color: aqua;
+  }
+
+}

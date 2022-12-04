@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script>
+        function toggle(){
+            console.log(true)
+            let ele = document.querySelector(".popup")
+            ele.classList.toggle("active")
+        }
+    </script>
+</head>
+
+<body>
+    <a class="exit" href="../index.html">
+        <img src="../arrow.png" alt="">
+    </a>
+    <div class="forms">
+        <form action="forum.html"onsubmit=" return toggle()">
+            <label for="itemtype">Type of Item</label>
+            <select name="Itemtype" id="itemtype">
+                <option value="potion">Potion</option>
+                <option value="weapon">Weapon</option>
+                <option value="armor">Armor</option>
+                <option value="magicScroll">MagicScroll</option>
+            </select><br>
+            <label for="itemName">Item Name:</label><br>
+            <input type="text" id="itemName" name="itemName"><br>
+            <label for="description">What does it do? :</label><br>
+            <input type="text" id="description" name="description"><br>
+            <label for="price">Name Your Price :</label><br>
+            <input type="text" id="price" name="price"><br>
+            <input type="submit" value="Submit" />
+
+        </form>
+    </div>
+    <div class="popup" id="submit complete">
+        <a>Thanks you for finishing the form we will</a>
+        <a>We will get back to you as soon as Gerad fetches them</a>
+    </div>
+
+</body>
