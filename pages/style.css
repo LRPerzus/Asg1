@@ -38,15 +38,15 @@ body{
   border-radius: 80px;
 
 }
-
 .Gilmore .detailsColumn{
   display: flex;
   flex-direction: column;
   height: 30%;
   position: relative;
-  bottom: 250px;
+  bottom: 270px;
   color: white;
-  margin-left: 20%;
+  margin-left: 25%;
+
 }
 
 .Gilmore .detailsColumn .details{

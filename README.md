@@ -1,5 +1,6 @@
 # Asg1
 “Gilmore shop”
+
 Intended Audience : People who want to buy magic and fantastical items from a mystic and shimmering Host
 
 Purpose of website to list items a dnd party can buy instead of just an excel document.
