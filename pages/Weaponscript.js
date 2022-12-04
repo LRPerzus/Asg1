@@ -24,7 +24,7 @@ const ironSword = new Weapon(
     "Sword made of Iron",
     10,
     15,
-    "../Weapon.png",
+    "../sprites/Weapon.png",
     'ironSword'
 )
 list.push(ironSword)
@@ -34,7 +34,7 @@ const ironSword2 = new Weapon(
     "Sword made of Iron",
     10,
     15,
-    "../Weapon.png",
+    "../sprites/Weapon.png",
     'ironSword2'
 )
 list.push(ironSword2)
@@ -44,7 +44,7 @@ const ironSword3 = new Weapon(
     "Sword made of Iron",
     0,
     30,
-    "../Weapon.png",
+    "../sprites/Weapon.png",
     'ironSword3'
 )
 list.push(ironSword3)

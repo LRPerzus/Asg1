@@ -24,7 +24,7 @@ const lightning = new MagicScroll(
     "lightning shall be brought down to strike your foes ",
     10,
     15,
-    "../MagicScroll.png",
+    "../sprites/MagicScroll.png",
     'lightning'
 )
 list.push(lightning)
@@ -34,7 +34,7 @@ const fireBall= new MagicScroll(
     "lightning shall be brought down to strike your foes ",
     10,
     15,
-    "../MagicScroll.png",
+    "../sprites/MagicScroll.png",
     'fireBall'
 )
 list.push(fireBall)
@@ -44,7 +44,7 @@ const steelSpikes= new MagicScroll(
     "Steel Spikes come to you",
     10,
     15,
-    "../MagicScroll.png",
+    "../sprites/MagicScroll.png",
     'steelSpikes'
 )
 list.push(steelSpikes)

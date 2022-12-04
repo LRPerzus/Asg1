@@ -24,7 +24,7 @@ const leatherArmor = new Armor(
     "A Simple Leather Armor for simple protection ",
     10,
     15,
-    "../Armor.png",
+    "../sprites/Armor.png",
     'leatherArmor'
 )
 Potionlist.push(leatherArmor)
@@ -34,7 +34,7 @@ const IronArmor = new Armor(
     "A Simple Iron Armor for simple protection ",
     10,
     15,
-    "../Armor.png",
+    "../sprites/Armor.png",
     'IronArmor'
 )
 Potionlist.push(IronArmor)
@@ -44,7 +44,7 @@ const SteelArmor = new Armor(
     "A Simple Steel Armor for simple protection ",
     10,
     15,
-    "../Armor.png",
+    "../sprites/Armor.png",
     'SteelArmor'
 )
 Potionlist.push(SteelArmor)

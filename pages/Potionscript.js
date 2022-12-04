@@ -23,7 +23,7 @@ const healthPotion = new Potion(
     "A flask of liquid that heals the body from injuries",
     10,
     15,
-    "../Potion.png",
+    "../sprites/Potion.png",
     'healthPotion'
 )
 Potionlist.push(healthPotion)
@@ -33,7 +33,7 @@ const speedPotion = new Potion(
     "A flask of liquid that gives you SPEEEDDDDD GOTTA GO FAST",
     10,
     20,
-    "../Potion.png",
+    "../sprites/Potion.png",
     'speedPotion'
 
 )
@@ -44,7 +44,7 @@ const idkPotion = new Potion(
     "??????????",
     0,
     30,
-    "../Potion.png",
+    "../sprites/Potion.png",
     'idkPotion'
 )
 Potionlist.push(idkPotion)
